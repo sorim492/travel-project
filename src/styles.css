@@ -1,8 +1,32 @@
+:root{
+    --primary-color: white;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)) ,url("../images/bernal.png");
+    background-repeat: none;
+    background-size: cover;
+    margin: 10px 5px;
+}
+
 h1{
 font-family: Poppins;
 font-size: 96px;
 font-weight: 700;
 line-height: 144px;
 letter-spacing: 0em;
-text-align: left;
+}
+
+h1,h2,h3{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header a{
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px auto;
 }
