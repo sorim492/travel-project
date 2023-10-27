@@ -1,5 +1,6 @@
 :root{
     --primary-color: white;
+    --primary-font-family: "Poppins", sans-serif; 
 }
 
 header{
@@ -7,26 +8,69 @@ header{
     background-repeat: none;
     background-size: cover;
     margin: 10px 5px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--primary-font-family);
+    padding: 80px 0;
 }
 
 h1{
-font-family: Poppins;
 font-size: 96px;
 font-weight: 700;
-line-height: 144px;
-letter-spacing: 0em;
+line-height: 1.5;
 }
 
-h1,h2,h3{
-    color: var(--primary-color);
-    text-align: center;
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.5;
 }
 
 header a{
-    color: var(--primary-color);
+    color: blueviolet;
     text-decoration: none;
-    background-color: blueviolet;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: 16px 32px;
     border-radius: 4px;
-    margin: 10px auto;
+    margin: 30px auto;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media (max-width:900px){
+    header{
+        padding: 40px 0;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    header a{
+        font-size: 10px;
+        padding: 10px;
+    }
 }
