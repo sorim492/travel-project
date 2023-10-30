@@ -4,19 +4,30 @@
     --primary-font-family: "Poppins", sans-serif; 
 }
 
-body{
-    background-color: var(--secondary-color);
-}
-
 header{
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)) ,url("../images/bernal.png");
     background-repeat: none;
     background-size: cover;
-    margin: 10px 5px;
+    margin: 10px 0;
     color: var(--primary-color);
     text-align: center;
     font-family: var(--primary-font-family);
     padding: 50px 0;
+}
+
+header a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 30px auto;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 h1{
@@ -35,21 +46,6 @@ h3{
     font-size: 25px;
     font-weight: 800;
     line-height: 1.5;
-}
-
-header a{
-    color: blueviolet;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    padding: 16px 32px;
-    border-radius: 4px;
-    margin: 30px auto;
-    font-weight: 700;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 1.5;
-    letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 main{
@@ -72,6 +68,20 @@ main h3{
     margin: 0;
 }
 
+main h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+}
+
+main h5{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+}
+
 main p{
     font-style: normal;
     font-weight: 400;
@@ -81,9 +91,9 @@ main p{
 }
 
 section{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 50px;
 }
 
 footer{
@@ -127,9 +137,37 @@ footer p{
     line-height: 24px;
     opacity: 0.7;
 }
+.btn{
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card{
+    background-color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.card-body{
+    padding: 30px;
+}
+
+.card-footer{
+    padding: 10px;
+}
 
 .container{
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -146,8 +184,23 @@ footer p{
     grid-template-columns: 1fr repeat(2,2fr);
 }
 
+.grid-3-equal{
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .img-responsive{
     max-width: 100%;
+    display: block;
+}
+
+.secondary-section{
+    max-width: 100%;
+    background-color: rgba(113, 113, 113, 0.1);
+    text-align: center;
+}
+
+.secondary-section h3{
+    color: blueviolet;
 }
 
 @media (max-width:960px){
