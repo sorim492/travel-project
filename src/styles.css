@@ -1,6 +1,11 @@
 :root{
     --primary-color: white;
+    --secondary-color: #fbf9dd;
     --primary-font-family: "Poppins", sans-serif; 
+}
+
+body{
+    background-color: var(--secondary-color);
 }
 
 header{
@@ -47,6 +52,40 @@ header a{
     text-transform: uppercase;
 }
 
+main{
+    background-color: var(--primary-color);
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
 footer{
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url('../images/uvas.jpeg');
     background-repeat: no-repeat;
@@ -54,9 +93,6 @@ footer{
     padding: 100px 0;
     color: var(--primary-color);
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr repeat(2,2fr);
-    grid-gap: 20px;
 }
 
 footer h3{
@@ -97,6 +133,19 @@ footer p{
     margin: 0 auto;
 }
 
+.grid{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.grid-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3{
+    grid-template-columns: 1fr repeat(2,2fr);
+}
+
 @media (max-width:960px){
     header{
         padding: 40px 0;
@@ -117,5 +166,31 @@ footer p{
     header a{
         font-size: 10px;
         padding: 10px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    section{
+        padding: 5px;
+    }
+
+    main h3{
+        font-size: 20px;
+    }
+
+    main h2{
+        font-size: 15px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    main img{
+        display: block;
+        margin: 0 auto ;
     }
 }
