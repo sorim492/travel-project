@@ -146,6 +146,10 @@ footer p{
     grid-template-columns: 1fr repeat(2,2fr);
 }
 
+.img-responsive{
+    max-width: 100%;
+}
+
 @media (max-width:960px){
     header{
         padding: 40px 0;
