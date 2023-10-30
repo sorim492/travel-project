@@ -55,7 +55,8 @@ footer{
     color: var(--primary-color);
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: 1fr repeat(2,2fr);
+    grid-gap: 20px;
 }
 
 footer h3{
