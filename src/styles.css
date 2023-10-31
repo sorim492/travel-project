@@ -204,6 +204,10 @@ footer p{
     filter: brightness(80%);
 }
 
+.instagram-embed{
+    margin: 30px 0;
+}
+
 .secondary-section{
     max-width: 100%;
     background-color: rgba(113, 113, 113, 0.1);
@@ -212,6 +216,10 @@ footer p{
 
 .secondary-section h3{
     color: blueviolet;
+}
+
+.text-center{
+    text-align: center;
 }
 
 @media (max-width:960px){
